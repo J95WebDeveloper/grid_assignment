@@ -1,0 +1,51 @@
+Task 3 : Explain the use of grid-auto-row and grid-auto-column using code examples.
+
+Answer - 
+
+Grid-auto-row : grid-auto-row property specifying the size of the grid rows that were created without
+                having an explicit size.
+
+code : Html:
+           Code :  Html:
+             <div class='grid'>
+                  <div class='item1'></div>
+                  <div class='item2'></div>
+                  <div class='item3'></div>
+             </div>
+          
+             CSS :
+               .grid {
+                      height:100px;
+                      display:grid;
+                      grid-template-area:'a a';
+                      gap:10px;
+                      grid-auto-row:100px;
+                      }
+                .grid > div{
+                      background-color: green;
+                     }
+
+
+ 
+Grid-auto-column :  grid-auto-column property specifying the size of an implicitly created
+                                grid column track or pattern of tracks. 
+
+
+Code :  Html:
+             <div class='grid'>
+                  <div class='item1'></div>
+                  <div class='item2'></div>
+                  <div class='item3'></div>
+             </div>
+          
+             CSS :
+               .grid {
+                      height:100px;
+                      display:grid;
+                      grid-template-area:'a a';
+                      gap:10px;
+                      grid-auto-column:200px;
+                      }
+                .grid > div{
+                      background-color: green;
+                     }
